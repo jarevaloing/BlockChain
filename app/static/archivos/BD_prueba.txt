@@ -1,0 +1,36 @@
+| Documento de Identidad |    Nombre    |           Dirección           | Teléfono   | Edad |   Facultad   |     Carrera     |
+|------------------------|--------------|------------------------------|------------|------|--------------|-----------------|
+|         123456         |   Juan Pérez | 123 Calle Principal, Ciudad  | 555-1234   |  20  | Ingeniería   | Ingeniería Civil|
+|         234567         |   Ana López  | 456 Avenida Norte, Ciudad    | 555-5678   |  22  | Ciencias     | Biología        |
+|         345678         |   Luis Torres| 789 Calle Este, Ciudad       | 555-7890   |  21  | Medicina     | Medicina General|
+|         456789         |   María Ruiz | 101 Calle Oeste, Ciudad      | 555-2345   |  23  | Artes        | Música          |
+|         567890         |   Carlos Soto| 246 Avenida Sur, Ciudad      | 555-6789   |  19  | Ciencias     | Física          |
+|         678901         |   Laura Gómez| 987 Calle Principal, Ciudad  | 555-4321   |  20  | Derecho      | Derecho Civil   |
+|         789012         |   Andrés Pérez| 543 Avenida Norte, Ciudad    | 555-8765   |  22  | Ingeniería   | Ingeniería Eléc.|
+|         890123         |   Isabel Rojas| 654 Calle Este, Ciudad       | 555-9876   |  21  | Medicina     | Cirugía         |
+|         901234         |   Pedro Ramírez| 876 Calle Oeste, Ciudad     | 555-3456   |  24  | Artes        | Pintura         |
+|         012345         |   Marta Pérez | 234 Avenida Sur, Ciudad      | 555-7654   |  18  | Ciencias     | Química         |
+|         123456         |   Daniel López| 765 Calle Principal, Ciudad  | 555-2345   |  20  | Derecho      | Derecho Penal   |
+|         234567         |   Carmen Soto | 876 Avenida Norte, Ciudad    | 555-6780   |  21  | Ingeniería   | Ingeniería Mec. |
+|         345678         |   Juan Pérez  | 987 Calle Este, Ciudad       | 555-3456   |  22  | Medicina     | Cardiología     |
+|         456789         |   Ana López   | 321 Calle Oeste, Ciudad      | 555-8901   |  23  | Artes        | Danza           |
+|         567890         |   Luis Torres | 543 Avenida Sur, Ciudad      | 555-2345   |  19  | Ciencias     | Matemáticas     |
+|         678901         |   María Ruiz  | 654 Calle Principal, Ciudad  | 555-6789   |  20  | Derecho      | Derecho Laboral |
+|         789012         |   Carlos Soto | 789 Avenida Norte, Ciudad    | 555-1234   |  22  | Ingeniería   | Ingeniería Civil|
+|         890123         |   Laura Gómez | 987 Calle Este, Ciudad       | 555-5678   |  21  | Medicina     | Neurología     |
+|         901234         |   Andrés Pérez| 101 Calle Oeste, Ciudad      | 555-7890   |  24  | Artes        | Escultura       |
+|         012345         |   Isabel Rojas| 123 Avenida Sur, Ciudad      | 555-2345   |  18  | Ciencias     | Física          |
+|         123456         |   Pedro Ramírez| 234 Calle Principal, Ciudad  | 555-4321   |  20  | Derecho      | Derecho Internacional|
+|         234567         |   Marta Pérez | 543 Avenida Norte, Ciudad    | 555-8765   |  21  | Ingeniería   | Ingeniería Eléc.|
+|         345678         |   Daniel López| 654 Calle Este, Ciudad       | 555-9876   |  22  | Medicina     | Pediatría      |
+|         456789         |   Carmen Soto | 876 Calle Oeste, Ciudad      | 555-2345   |  23  | Artes        | Teatro          |
+|         567890         |   Juan Pérez  | 987 Avenida Sur, Ciudad      | 555-7654   |  19  | Ciencias     | Biología        |
+|         678901         |   Ana López   | 101 Calle Principal, Ciudad  | 555-2345   |  20  | Derecho      | Derecho Laboral |
+|         789012         |   Luis Torres | 234 Avenida Norte, Ciudad    | 555-6780   |  21  | Ingeniería   | Ingeniería Mec. |
+|         890123         |   María Ruiz  | 345 Calle Este, Ciudad       | 555-3456   |  22  | Medicina     | Cirugía         |
+|         901234         |   Carlos Soto | 456 Calle Oeste, Ciudad      | 555-8901   |  23  | Artes        | Danza           |
+|         012345         |   Laura Gómez | 567 Avenida Sur, Ciudad      | 555-2345   |  20  | Ciencias     | Matemáticas     |
+|         123456         |   Andrés Pérez| 678 Calle Principal, Ciudad  | 555-6789   |  21  | Derecho      | Derecho Penal   |
+|         234567         |   Isabel Rojas| 789 Avenida Norte, Ciudad    | 555-1234   |  22  | Ingeniería   | Ingeniería Civil|
+|         345678         |   Pedro Ramírez| 890 Calle Este, Ciudad      | 555-5678   |  24  | Medicina     | Neurología     |
+|         456789         |   Marta Pérez | 901 Calle Oeste, Ciudad      | 555-7890   |  18  | Artes        | Escult

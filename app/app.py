@@ -90,24 +90,26 @@ def registarArchivo():
             
 
             #Add blocks to the blockchain
-            blockchain = Blockchain()
-            blockchain.add_block(FileBlock)
+            blockchain = Blockchain() 
+            VectorFile = FileBlock.split("\n")
 
+            Encabezado = "<table border='1'><thead><tr><th>Data</th><th>Previous hash</th><th>Hash</th></tr></thead><tbody>"
+            concatenar = ""
+
+            for item in VectorFile:
+                blockchain.add_block(item)
             
-            #Print and show the blockchain
+                #Print and show the blockchain
 
-            for block in blockchain.chain:
-                if block.prev_hash == "0":
-                    DataG = block.data
-                    PreviousG = block.prev_hash
-                    HashG = block.hash
-                else :
-                    Data = block.data
-                    Previous = block.prev_hash
-                    Hash = block.hash    
+                for block in blockchain.chain:
+                        Previous = block.prev_hash
+                        Hash = block.hash    
+            
+                concatenar = concatenar + "<tr><td>" + item + "</td><td>" + Previous + "</td><td>" + Hash + "</td></tr>"
+            PiedePagina = "</tbody></table>"
       
             
-            return "<table border='1'><thead><tr><th>Data</th><th>Previous hash</th><th>Hash</th></tr></thead><tbody><tr><td>" + DataG + "</td><td>" + PreviousG + "</td><td>" + HashG + "</td></tr><tr><td>" + Data + "</td><td>" + Previous + "</td><td>" + Hash + "</td></tr></tbody></table>"
+            return Encabezado + concatenar + PiedePagina
         return render_template('index.html')
     
 

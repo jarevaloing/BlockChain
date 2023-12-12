@@ -102,10 +102,23 @@ def registarArchivo():
 
         # Crear un gráfico para visualizar la cadena de bloques
         plt.figure(figsize=(8, 6))
-        plt.plot(range(1, len(blockchain.chain) + 1), [int(block.hash, 16) for block in blockchain.chain], marker='o')
+
+        # Extraer datos para la leyenda
+        block_numbers = range(1, len(blockchain.chain) + 1)
+        previous_hashes = [block.prev_hash for block in blockchain.chain]
+        current_hashes = [block.hash for block in blockchain.chain]
+
+        # Graficar líneas con leyendas
+        plt.plot(block_numbers, [int(hash, 16) for hash in previous_hashes], marker='o', linestyle='-', label='Previous Hash', color='blue')
+        plt.plot(block_numbers, [int(hash, 16) for hash in current_hashes], marker='o', linestyle='-', label='Current Hash', color='green')
+
+        # Configurar leyendas
+        plt.legend()
+
+        # Configurar el resto del gráfico
         plt.title('Blockchain Visualization')
         plt.xlabel('Block Number')
-        plt.ylabel('Hash Value (Integer)')
+        plt.ylabel('Hash Value (Hexadecimal)')
         plt.grid(True)
 
         # Guardar el gráfico en un archivo
@@ -113,8 +126,33 @@ def registarArchivo():
         plt.savefig(graph_path)
         plt.close()
 
+        # Texto explicativo
+        explicacion_html = """
+            <div id="explanation">
+                <h2>Entendiendo la Gráfica:</h2>
+                <p>
+                    Esta gráfica representa la evolución de una cadena de bloques, un tipo especial de registro digital.
+                    Cada punto en la línea vertical corresponde a un bloque en la cadena. Los bloques están conectados entre sí
+                    mediante la línea azul, indicando la relación cronológica y la seguridad de la cadena.
+                </p>
+                <p>
+                    Los valores hexadecimales en el eje y son las "firmas" únicas (hash) de cada bloque. Estas firmas garantizan
+                    la integridad de la información dentro del bloque y aseguran que ningún bloque se altere sin que se note.
+                </p>
+                <p>
+                    Al observar la gráfica, puedes notar cómo la cadena de bloques mantiene una estructura continua, y cualquier cambio
+                    en un bloque afectaría a todos los bloques subsiguientes. Esto ilustra la resistencia a la manipulación de la cadena.
+                </p>
+                <p>
+                    En resumen, la cadena de bloques proporciona una forma segura y transparente de almacenar información, donde cada
+                    bloque contribuye a la seguridad general de la cadena.
+                </p>
+            </div>
+        """
+
+
         # Mostrar la tabla y el gráfico en la página web
-        return f"{Encabezado}{concatenar}{PiedePagina}<img src='/static/graph.png' alt='Blockchain Visualization'>"
+        return f"{Encabezado}{concatenar}{PiedePagina}<img src='/static/graph.png' alt='Blockchain Visualization'>{explicacion_html}"
 
     return render_template('index.html')
 
